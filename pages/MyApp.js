@@ -1,22 +1,22 @@
+import NavBar from "./Components/NavBar";
+
 const MyApp = require() => {
     return ( 
         <main>
-            
-            
             {/* TODO General Layout, extract w/ glean */}
+            <NavBar />
+             {/* <div className="Navbar">
+            //   <div className="logo"></div>
 
-            <div className="Navbar">
-        <div className="logo"></div>
+            //   {/* Add onClick={} event to sidebar, toggle view, change opacity for the rest of the page & have clicking on anywhere but the sidebar (or the X ofc) close the sidebar */}
+            {/* //   <div className="rightnav">
+            //     <div className="addressLink"></div>
 
-        {/* Add onClick={} event to sidebar, toggle view, change opacity for the rest of the page & have clicking on anywhere but the sidebar (or the X ofc) close the sidebar */}
-        <div className="rightnav">
-          <div className="addressLink"></div>
-
-          <div className="sideBar">
-            <button></button>
-          </div>
-        </div>
-            </div>
+            //     <div className="sideBar">
+            //       <button></button>
+            //     </div>
+            //   </div>
+             </div> */} */}
             {/* Add onClick={} event to button which routes to schedule appt page */}
             <div className="s1-container">
         <div className="homeadvert">
