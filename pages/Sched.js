@@ -1,10 +1,11 @@
 import Nav from "./components/Nav";
 
-const PatientInfo = () => {
+const Sched = () => {
   return (
     <div>
-      <h1>PatientInfo</h1>
+      <h1>Sched</h1>
       <Nav />
+
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro
         reiciendis ea quibusdam nemo nobis hic iure quos odio corporis,
@@ -27,4 +28,4 @@ const PatientInfo = () => {
   );
 };
 
-export default PatientInfo;
+export default Sched;

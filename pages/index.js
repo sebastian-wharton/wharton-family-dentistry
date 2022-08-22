@@ -1,52 +1,60 @@
-// import Image from "next/image";
-// import logo from "../public/images/MFS-Logo.png";
-// import smile from "../public/images/smiling.jpg";
-import Modal from "./Components/Modal";
-import NavBar from "./Components/NavBar";
+import Image from "next/image";
+import smile from "../public/images/smiling.jpg";
+// import Modal from "./Components/Modal";
+import Head from "next/head";
+import Link from "next/link";
 
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div>
-        <NavBar></NavBar>
+    <>
+      <Head>
+        <title>Dentistry | Home</title>
+      </Head>
+      <Nav />
+      <br />
+      <h1>Homepage</h1>
 
-
-
-
-
-
-
-      {/* <br />
-      <h1>Hello World!</h1>
-      <p className="text-3xl font-bold underline">
-        Hello world! Wharton Family Dentistry is up & running with Tailwind &
-        Next JS!!
-      </p>
-      <div className="relative w-32 h-32 overflow-hidden rounded-full ring-2 ring-pink-300 ring-offset-4">
-        <Image
-          objectFit="cover"
-          src={logo}
-          alt="Mansfield Family Dentistry Logo"
-          layout="fill"
-          priority
-        />
+      {/* Section1 - Schedule appt link */}
+      <div className="section1">
+        <div className="max-width[960px]">
+          <div className="float-left border-gray-400 border 2 w-5/12">
+            <p className="">
+              Today’s advanced dental treatments and materials can give you a
+              healthier, more complete smile that can last you a lifetime. Your
+              Mansfield, TX Dentist, Drs. Bauer or Bauer, can help revitalize
+              and maintain your teeth and gums, giving you the smile you’ve
+              always wanted.
+            </p>
+            <h3 className="font-bold">
+              Schedule an appointment online or call (817) 473-0291
+            </h3>
+            <button className="bg-m3 rounded-sm p-1 m-2 text-center">
+              <Link href="/Sched">
+                <a>Schedule Appointment</a>
+              </Link>
+            </button>
+          </div>
+          <div className="float-right h-20 w-20">
+            <Image src={smile} alt="Smiling woman" width={500} height={333} />
+          </div>
+        </div>
       </div>
-      <div className="relative w-32 h-32 overflow-hidden rounded-full ring-2 ring-pink-300 ring-offset-4">
-        <Image
-          objectFit="cover"
-          src={smile}
-          alt="Picture of smiling woman"
-          layout="fill"
-          priority
-        />
-      </div> */}
-      
-      {/* <Modal>
-        <h2>Login</h2>
-        <p>Username</p>
-        <p>Password</p>
-      </Modal> */}
-      
-    </div>
+      {/* Section2 - Services cards */}
+      {/* Section3 - Quote */}
+      <div className="absolute bottom-10 left-10 bg-indigo-500">
+        <h3>Section 3</h3>
+        <div className=" ">
+          <p>
+            Imagination, Innovation, Precision Our Mission is to change lives
+            through the highest quality dental care imaginable
+          </p>
+        </div>
+      </div>
+
+      <Footer />
+    </>
   );
 }
