@@ -13,66 +13,123 @@
   --goldLight-color: #DAD6B5;
   --lightest-color: #F0EDDB;
 }
-html,
-body {
-  background:var(--lightest-color);
-  color: #333;
-  font-family: "Nunito";
+
+
+/* Useful Links */
+/*   https: //fonts.google.com/icons   */
+/* https: //realfavicongenerator.net/ */
+/* https: //www.svgrepo.com/ */
+/* https: //unsplash.com/ */
+/* https: //developers.google.com/fonts/docs/material_icons#icon_font_for_the_web */
+
+/* :root {
+  --black: #010409;
+  --white: #f2f2f2;
+  --lt-gray: #d9d9d9;
+  --d-gray: #676767;
+  --primary: #1500f2;
+  --secondary: #2f87b3;
+} */
+
+.content {
+  margin: 0 auto;
 }
-* {
-  
+
+
+.body {
+  background-color: #fff;
+  color: black;
+  margin: 0 auto;
+  padding: 8px;
 }
+
+h1 {
+  font-family: 'Sarabun',
+    sans-serif;
+  font-size: 32px;
+}
+
+h2 {
+  font-family: 'Archivo',
+    sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Archivo',
+    sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Nunito',
+    sans-serif;
+  font-size: 16px;
+}
+
 a {
-  color: blue;
+  text-decoration: none;
+  color: #333
+}
+
+
+
+/* header {
+  height: 50px;
+  background-color: #2f87b3;
+  color: var(--white);
+  text-align: center;
+}
+footer {
+  height: 50px;
+    background-color: #2f87b3;
+    color: var(--white);
+    text-align: center;
+} */
+
+.box {
+  height: 500px;
+  width: 700px;
+  border: 5px solid black;
+  background-color: orange;
+  display: block;
+}
+
+
+
+
+
+/*
+ 404 
+*/
+.not-found {
+  text-align: center;
+}
+
+.not-found a {
+  color: var(--white);
   text-decoration: underline;
 }
-section{
-  max-width: 960px;
-  height: 300px;
-  margin: 0 auto;
-  padding: 10px;
-}
 
-
-
-
-nav {
-  height: 20px;
-  width: 100%;
-  background-color: #352C21;
-  margin: 10px auto 80px;
-  padding: 10px 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  border-bottom: 1px solid #ddd;
-}
-nav a {
-  margin-left: 12px;
-}
-nav .logo {
-  margin-right: auto;
-  position: relative;
-}
-.logo {
-  aspect-ratio: ;
-}
-
-footer {
-  display: block;
-  text-align: center;
-  padding: 30px 0;
-  margin-top: 60px;
-  color: #777;
-  border-top: 1px solid #eaeaea;
+/* 
+Responsive Design & Dark Mode 
+*/
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: light;
+
+  .code {
+    background: #111;
   }
-  body {
-    color: #f2f2f2;
-    background: #1b1b1b;
+
+  .logo img {
+    filter: invert(1);
   }
 }

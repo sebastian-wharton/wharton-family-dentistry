@@ -1,81 +1,49 @@
-// // import Modal from "./Components/Modal";
-import Head from "next/head";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import Image from "next/image";
-import logo from "../public/images/logo.png";
+// import Link from "next/link";
+import styles from "../styles/Home.module.css";
+import Card from "../components/Card";
+import StaffCard from "../components/StaffCard";
+// import Image from "next/image";
+// import placeholder from "../public/img/1200x675.jpg";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Dentistry | Home</title>
-      </Head>
-      <Navbar />
-      <Image src={logo} />
+      <div className={styles.body}>
+        <div className=" h-30 w-30 flex flex-wrap items-center justify-around min-h-[250px] py-4">
+          <div className="text-center block max-w-[50%]">
+            <h2>Intro Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              molestias adipisci nobis voluptate incidunt!
+            </p>
+            <button className="p-2 width-[%100] text-center text-[#f2f2f2] bg-blue-500 rounded-lg shadow-sm shadow-blue-500 m-4 uppercase">
+              Schedule an appointment
+            </button>
+          </div>
 
-      <section>
-        <h1>Services</h1>
-        <div className="card">
-          <h3>Service</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis esse,
-            sunt nisi cupiditate praesentium officia.
-          </p>
+          <div className={styles.imgContainer}>
+            PlaceholderPlaceholderPlaceholder Placeholder Placeholder
+          </div>
         </div>
-      </section>
-      <section>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium
-          porro nam possimus, voluptatem magni quisquam veniam nihil
-          perspiciatis assumenda debitis vero quia sint expedita maxime.
-        </p>
-      </section>
-      <section>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium
-          porro nam possimus, voluptatem magni quisquam veniam nihil
-          perspiciatis assumenda debitis vero quia sint expedita maxime.
-        </p>
-      </section>
-      <Footer />
-      {/* Section1 - Schedule appt link */}
+        <div className="bg-[#f2f2f2] py-2 pb-8">
+          <h2>Services</h2>
+          <div className="grid grid-flow-row gap-4 px-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
+        </div>
+        <div className="bg-white py-2">
+          <h2 className="mb-12">Meet our Staff</h2>
+          <br />
+          <div className="flex flex-row items-center p-2">
+            <StaffCard />
+            <StaffCard />
+            <StaffCard />
+          </div>
+        </div>
+      </div>
     </>
   );
 }
-
-// <div className="section1">
-//   <div className="max-width[960px]">
-//     <div className="float-left border-gray-400 border 2 w-5/12">
-//       <p className="">
-//         Today’s advanced dental treatments and materials can give you a
-//         healthier, more complete smile that can last you a lifetime. Your
-//         Mansfield, TX Dentist, Drs. Bauer or Bauer, can help revitalize
-//         and maintain your teeth and gums, giving you the smile you’ve
-//         always wanted.
-//       </p>
-//       <h3 className="font-bold">
-//         Schedule an appointment online or call (817) 473-0291
-//       </h3>
-//       <button className="bg-m3 rounded-sm p-1 m-2 text-center">
-//         <Link href="/Sched">
-//           <a>Schedule Appointment</a>
-//         </Link>
-//       </button>
-//     </div>
-//     <div className="float-right h-20 w-20">
-//       <Image src={smile} alt="Smiling woman" width={500} height={333} />
-//     </div>
-//   </div>
-// </div>
-// {/* Section2 - Services cards */}
-// {/* Section3 - Quote */}
-// <div className="absolute bottom-10 left-10 bg-indigo-500">
-//   <h3>Section 3</h3>
-//   <div className="bg-red-900">
-//     <p>
-//       Imagination, Innovation, Precision Our Mission is to change lives
-//       through the highest quality dental care imaginable
-//     </p>
-//   </div>
-// </div>
