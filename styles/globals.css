@@ -74,7 +74,22 @@ a {
   color: #333
 }
 
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  color: #352C21;
+  background-color: #D9D3A4;
+  top: 50px;
+  height: auto;
+  width: auto;
+  
+}
 
+Link, a {
+  padding: 5px;
+}
 
 /* header {
   height: 50px;

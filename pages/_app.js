@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import "../styles/globals.css";
 import Head from "next/head";
+import Nav from "../components/Nav";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -31,6 +32,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#f2f2f2" />
       </Head>
       <Layout>
+        <Nav />
         <Component {...pageProps} />
       </Layout>
     </>
