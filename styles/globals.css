@@ -5,26 +5,66 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --brown-color: #352C21;
+  --teal-color: #5D8778;
+  --goldDark-color: #ABA374;
+  --goldMedium-color: #D9D3A4;
+  --goldLight-color: #DAD6B5;
+  --lightest-color: #F0EDDB;
+}
 html,
 body {
-  padding: 0;
-  margin: 0;
-  background: #1b1b1b;
-    color: #f2f2f2;
+  background:var(--lightest-color);
+  color: #333;
+  font-family: "Nunito";
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.content{
-  max-width: 960px;
-  margin: 0 auto;
-}
-
 * {
-  box-sizing: border-box;
+  
+}
+a {
+  color: blue;
+  text-decoration: underline;
+}
+section{
+  max-width: 960px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+
+
+nav {
+  height: 20px;
+  width: 100%;
+  background-color: #352C21;
+  margin: 10px auto 80px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #ddd;
+}
+nav a {
+  margin-left: 12px;
+}
+nav .logo {
+  margin-right: auto;
+  position: relative;
+}
+.logo {
+  aspect-ratio: ;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  color: #777;
+  border-top: 1px solid #eaeaea;
 }
 
 @media (prefers-color-scheme: dark) {
