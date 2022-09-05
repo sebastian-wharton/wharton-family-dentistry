@@ -1,52 +1,49 @@
+// import Link from "next/link";
+import styles from "../styles/Home.module.css";
+import Card from "../components/Card";
+import StaffCard from "../components/StaffCard";
 // import Image from "next/image";
-// import logo from "../public/images/MFS-Logo.png";
-// import smile from "../public/images/smiling.jpg";
-import Modal from "./Components/Modal";
-import NavBar from "./Components/NavBar";
-
+// import placeholder from "../public/img/1200x675.jpg";
 
 export default function Home() {
   return (
-    <div>
-        <NavBar></NavBar>
+    <>
+      <div className={styles.body}>
+        <div className=" h-30 w-30 flex flex-wrap items-center justify-around min-h-[250px] py-4">
+          <div className="text-center block max-w-[50%]">
+            <h2>Intro Title</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              molestias adipisci nobis voluptate incidunt!
+            </p>
+            <button className="p-2 width-[%100] text-center text-[#f2f2f2] bg-blue-500 rounded-lg shadow-sm shadow-blue-500 m-4 uppercase">
+              Schedule an appointment
+            </button>
+          </div>
 
-
-
-
-
-
-
-      {/* <br />
-      <h1>Hello World!</h1>
-      <p className="text-3xl font-bold underline">
-        Hello world! Wharton Family Dentistry is up & running with Tailwind &
-        Next JS!!
-      </p>
-      <div className="relative w-32 h-32 overflow-hidden rounded-full ring-2 ring-pink-300 ring-offset-4">
-        <Image
-          objectFit="cover"
-          src={logo}
-          alt="Mansfield Family Dentistry Logo"
-          layout="fill"
-          priority
-        />
+          <div className={styles.imgContainer}>
+            PlaceholderPlaceholderPlaceholder Placeholder Placeholder
+          </div>
+        </div>
+        <div className="bg-[#f2f2f2] py-2 pb-8">
+          <h2>Services</h2>
+          <div className="grid grid-flow-row gap-4 px-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
+        </div>
+        <div className="bg-white py-2">
+          <h2 className="mb-12">Meet our Staff</h2>
+          <br />
+          <div className="flex flex-row items-center p-2">
+            <StaffCard />
+            <StaffCard />
+            <StaffCard />
+          </div>
+        </div>
       </div>
-      <div className="relative w-32 h-32 overflow-hidden rounded-full ring-2 ring-pink-300 ring-offset-4">
-        <Image
-          objectFit="cover"
-          src={smile}
-          alt="Picture of smiling woman"
-          layout="fill"
-          priority
-        />
-      </div> */}
-      
-      {/* <Modal>
-        <h2>Login</h2>
-        <p>Username</p>
-        <p>Password</p>
-      </Modal> */}
-      
-    </div>
+    </>
   );
 }

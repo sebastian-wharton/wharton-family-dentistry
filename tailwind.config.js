@@ -1,3 +1,7 @@
+/** @type {import('tailwindcss').Config} */
+
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -6,16 +10,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        c1: "#352C21",
-        c2: "#5D8778",
-        c3: "#ABA374",
-        c4: "#D9D3A4",
-        c5: "#DAD6B5",
-        c6: "#F0EDDB",
+        brown: "#352C21",
+        teal: "#5D8778",
+        gd: "#ABA374",
+        gm: "#D9D3A4",
+        gl: "#DAD6B5",
+        light: "#F0EDDB",
+        black: "#010409",
+        gray: "#343434",
+        primary: "#f4540a",
+        secondary: "#f4540a",
       },
       fontFamily: {
-        body: ['Nunito'],
-        title: ['Archivo']
+        nunito: ["Nunito"],
+        archivo: ["Archivo"],
       },
     },
   },
