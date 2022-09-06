@@ -10,16 +10,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brown: "#352C21",
-        teal: "#5D8778",
-        gd: "#ABA374",
-        gm: "#D9D3A4",
-        gl: "#DAD6B5",
-        light: "#F0EDDB",
-        black: "#010409",
-        gray: "#343434",
-        primary: "#f4540a",
-        secondary: "#f4540a",
+        _brown: "#352C21",
+        _teal: "#5D8778",
+        _gd: "#ABA374",
+        _gm: "#D9D3A4",
+        _gl: "#DAD6B5",
+        _light: "#F0EDDB",
+        _black: "#010409",
+        _gray: "#343434",
+        _primary: "#f4540a",
+        _secondary: "#f4540a",
       },
       fontFamily: {
         nunito: ["Nunito"],

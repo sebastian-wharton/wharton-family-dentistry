@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Dentistry | Home</title>
+        <title>Wharton Family Dentistry</title>
         <meta name="keywords" content="dentistry" />
         <link
           rel="apple-touch-icon"
