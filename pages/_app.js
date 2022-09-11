@@ -1,12 +1,13 @@
 import Layout from "../components/Layout";
 import "../styles/globals.css";
 import Head from "next/head";
+import Nav from "../components/Nav";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Dentistry | Home</title>
+        <title>Wharton Family Dentistry</title>
         <meta name="keywords" content="dentistry" />
         <link
           rel="apple-touch-icon"
@@ -31,6 +32,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#f2f2f2" />
       </Head>
       <Layout>
+        <Nav />
         <Component {...pageProps} />
       </Layout>
     </>

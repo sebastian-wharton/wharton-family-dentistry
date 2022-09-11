@@ -51,14 +51,14 @@ h1 {
 
 h2 {
   font-family: 'Archivo',
-    sans-serif;
+  sans-serif;
   font-size: 24px;
-  text-align: center;
+  text-align: left;
 }
 
 h3 {
   font-family: 'Archivo',
-    sans-serif;
+  sans-serif;
   font-size: 18px;
   font-weight: bold;
 }
@@ -74,7 +74,22 @@ a {
   color: #333
 }
 
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  color: #352C21;
+  background-color: #D9D3A4;
+  top: 50px;
+  height: auto;
+  width: auto;
+  
+}
 
+Link, a {
+  padding: 5px;
+}
 
 /* header {
   height: 50px;
@@ -97,7 +112,24 @@ footer {
   display: block;
 }
 
+.article {
+  width: 80%;
+  height: 220px;
+  background-color: #5D8778;
+  margin: 5px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 20px;
+}
 
+form {
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  display: block;
+}
 
 
 

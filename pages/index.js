@@ -2,6 +2,8 @@
 import styles from "../styles/Home.module.css";
 import Card from "../components/Card";
 import StaffCard from "../components/StaffCard";
+import Link from "next/link";
+
 // import Image from "next/image";
 // import placeholder from "../public/img/1200x675.jpg";
 
@@ -9,23 +11,24 @@ export default function Home() {
   return (
     <>
       <div className={styles.body}>
-        <div className=" h-30 w-30 flex flex-wrap items-center justify-around min-h-[250px] py-4">
+        <div className="bg-[#f2f2f2] h-30 w-30 flex flex-wrap items-center justify-around min-h-[250px] py-4">
           <div className="text-center block max-w-[50%]">
-            <h2>Intro Title</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
               molestias adipisci nobis voluptate incidunt!
             </p>
-            <button className="p-2 width-[%100] text-center text-[#f2f2f2] bg-blue-500 rounded-lg shadow-sm shadow-blue-500 m-4 uppercase">
-              Schedule an appointment
-            </button>
+            <Link href="/scheduling">
+              <button className="p-2 width-[%100] text-center text-[#f2f2f2] bg-blue-500 rounded-lg shadow-sm shadow-blue-500 m-4 uppercase">
+                Schedule Appointment
+              </button>
+            </Link>
           </div>
 
           <div className={styles.imgContainer}>
             PlaceholderPlaceholderPlaceholder Placeholder Placeholder
           </div>
         </div>
-        <div className="bg-[#f2f2f2] py-2 pb-8">
+        <div className="bg-[#fff] py-2 pb-8">
           <h2>Services</h2>
           <div className="grid grid-flow-row gap-4 px-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             <Card />
@@ -34,7 +37,7 @@ export default function Home() {
             <Card />
           </div>
         </div>
-        <div className="bg-white py-2">
+        <div className="bg-[#f2f2f2] py-2">
           <h2 className="mb-12">Meet our Staff</h2>
           <br />
           <div className="flex flex-row items-center p-2">

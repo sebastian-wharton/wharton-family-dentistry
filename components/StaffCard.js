@@ -1,11 +1,11 @@
 const StaffCard = () => {
   return (
-    <div className="m-2  bg-white shadow-md rounded-lg">
+    <div className="m-2 dark:shadow-gray-200 duration-300 hover:-translate-y-1 bg-white shadow-md rounded-lg">
       <div className="flex justify-center md:justify-center py-2 -mt-16">
         <div className="w-32 h-32 object-cover rounded-full border-2 border-indigo-500"></div>
       </div>
-      <div className="px-2">
-        <h2 className="text-gray-800 text-3xl font-semibold">Dr. Jones</h2>
+      <div className="px-2 ">
+        <h2 className="text-gray-800 text-3xl font-semibold ">Dr. Jones</h2>
         <p className="mt-2 text-gray-600">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores
           deserunt ea doloremque natus error, rerum quas odio quaerat nam ex
@@ -14,7 +14,7 @@ const StaffCard = () => {
       </div>
       <div className="flex justify-end mt-4">
         <a href="#" className="text-lg font-medium text-indigo-500 px-4 pb-2 ">
-          John Doe
+          Position / Credentials
         </a>
       </div>
     </div>

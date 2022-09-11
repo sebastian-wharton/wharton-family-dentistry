@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.css";
 
 const Card = () => {
   return (
-    <div className="my-2 shadow-xl shadow-gray-200 dark:shadow-gray-900 duration-300 hover:-translate-y-1">
+    <div className="my-2 shadow-md shadow-gray-200 dark:shadow-gray-900 duration-300 hover:-translate-y-1">
       <div className="bg-orange-300  min-h-[100px] dark:bg-brown-900 width-full">
         Card Img Placeholder
       </div>
