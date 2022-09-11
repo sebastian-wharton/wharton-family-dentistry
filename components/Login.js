@@ -4,13 +4,13 @@ const Login = () => {
       <form action="" className="p-4 justify-center w-full flex flex-col">
         <label htmlFor="">
           <span>Username: </span>
-          <input type="text" />
+          <input type="text" className="shadow-md pt-1" />
         </label>
         <label htmlFor="">
           <span>Password: </span>
-          <input type="text" />
+          <input type="text" className="shadow-md pt-1" />
         </label>
-        <button>Submit</button>
+        <button className="pt-1">Submit</button>
       </form>
     </>
   );

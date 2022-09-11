@@ -8,12 +8,12 @@ const Registration = () => {
       <div>
         <h1>Registration</h1>
         <div className="flex">
-          <div className="w-[50%] bg-_gd border-r-2 m-2 h-60 pt-2 content-center items-center">
-            <h2>Log In</h2>
+          <div className="w-[50%] border-r-2 border-_black h-60 pt-2 content-center items-center">
+            <h1 className="text-center">Log In</h1>
             <Login />
           </div>
-          <div className="w-[50%] bg-_teal border-r-2 m-2 pt-2">
-            <h2>Sign Up</h2>
+          <div className="w-[50%] border-_black pt-2">
+            <h1 className="text-center">Sign Up</h1>
             <Signup />
           </div>
         </div>
