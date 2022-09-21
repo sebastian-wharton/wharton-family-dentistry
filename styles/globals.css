@@ -33,6 +33,8 @@
 
 .content {
   margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -53,7 +55,7 @@ h2 {
   font-family: 'Archivo',
   sans-serif;
   font-size: 24px;
-  text-align: left;
+  text-align: center;
 }
 
 h3 {

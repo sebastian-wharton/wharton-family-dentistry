@@ -3,7 +3,8 @@ import styles from "../styles/Home.module.css";
 import Card from "../components/Card";
 import StaffCard from "../components/StaffCard";
 import Link from "next/link";
-
+import Image from "next/image";
+import Burger from "../images/burger1.jpg";
 // import Image from "next/image";
 // import placeholder from "../public/img/1200x675.jpg";
 
@@ -12,7 +13,10 @@ export default function Home() {
     <>
       <div className={styles.body}>
         <div className="bg-[#f2f2f2] h-30 w-30 flex flex-wrap items-center justify-around min-h-[250px] py-4">
-          <div className="text-center block max-w-[50%]">
+          <div className={styles.imgContainer}>
+            <Image src={Burger} alt="picture of dental procedure" />
+          </div>
+          <div className="text-center block w-[100%] sm:w-1/2">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
               molestias adipisci nobis voluptate incidunt!
@@ -23,14 +27,10 @@ export default function Home() {
               </button>
             </Link>
           </div>
-
-          <div className={styles.imgContainer}>
-            PlaceholderPlaceholderPlaceholder Placeholder Placeholder
-          </div>
         </div>
         <div className="bg-[#fff] py-2 pb-8">
           <h2>Services</h2>
-          <div className="grid grid-flow-row gap-4 px-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid grid-flow-row gap-4 px-3 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             <Card />
             <Card />
             <Card />

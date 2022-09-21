@@ -15,10 +15,16 @@
 .imgContainer {
     flex-basis: auto;
     flex-wrap: wrap;
-    border: 2px solid black;
-    text-align: center;
-    width: 45%;
+    width: 90%;
     height: auto;
 }
+
+@media screen and (min-width: 640px) {
+    .imgContainer {
+        flex: 40%;
+        padding: 10px ;
+    }
+}
+
 
 /* why still overflowing? */

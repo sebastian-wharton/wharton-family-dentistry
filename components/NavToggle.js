@@ -1,5 +1,9 @@
+import { useState } from 'react'
+
 function NavToggle() {
-    let name = 'mario'
+
+useState('mario')
+
     const handleClick = () {
         name = 'luigi'
         console.log(name)
